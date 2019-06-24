@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-Do List</title>
+
+    <!--  Links  -->
+    <link rel="stylesheet" type="text/css" href="./app/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mali:400,600&display=swap" rel="stylesheet">
+
+    <!--  Scripts  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script  src="https://kit.fontawesome.com/d860ac2284.js"></script>
+    <script src="./app/js/todo.js"></script>
+</head>
+
+<body>
+    <div class="layout">
+            <h1>To-Do List</h1>
+        <div class="layout__main">
+            <form id="todoForm">
+                <div class="inputGroup">
+                    <span id="errorTooltip" class="hide">Like, can you not??</span>
+                    <input type="text" name="createItem" id="createInput" placeholder="Add item and press Enter/Return..">
+                </div>
+                <ul id="todoList">
+                </ul>
+                <div class="listActions">
+                    <span id="removeDone" class="fas fa-times hide">Remove completed items</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
